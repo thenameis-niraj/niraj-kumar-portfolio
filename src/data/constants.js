@@ -262,13 +262,13 @@ export const TimeLineData = [
 export const certificates = [
   {
     id: 2,
-    title: " Programming In C & C++ By (E & ICT Academy, IIT Kanpur)",
+    title: "	Programming In C & C++ by (E & ICT Academy, IIT Kanpur)",
     date: "December 2024",
     description: `Created a system that ensures access to scholarships by verifying students across different states. Used a Random Forest classification model to analyze scholarship data and determine students’ eligibility based on their information. Designed a user interface with React, Bootstrap, and jQuery for the end of the system. Employed PHP, JavaScript, and Python for the operations of the project.`,
-    image: "/images/certificates/Programming In C++.jpg", // ✅ Fixed public folder reference
+    image: "/images/certificates/Programming Cpp.jpg", // ✅ Fixed public folder reference
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "certificate",
-    link: "https://drive.google.com/file/d/1po6gAvMIiu0CzYQ0zqScMVfx3zbQHcep/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1VE5EEhz6cBsIMNC7teDMtVG0yPca1nPI/view?usp=drive_link",
     member: [],
   },
   {
