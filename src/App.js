@@ -1,11 +1,11 @@
 import { ThemeProvider } from "styled-components";
-import { useState, useEffect } from "react";
-import { darkTheme, setDarkMode } from "./utils/Themes.js";
+import { useState } from "react";
+import { darkTheme, lightTheme } from "./utils/Themes.js";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import HeroSection from "./components/HeroSection";
-import About from "./components/About";
+import WorkSummary from "./components/WorkSummary";
+import Domains from "./components/Domains";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -14,6 +14,8 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import Certificates from "./components/Certificates";
+import HeroSection from "./components/HeroSection";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -29,32 +31,44 @@ const Wrapper = styled.div`
     ),
     linear-gradient(
       141.27deg,
-      rgba(0, 70, 209, 0) 50%,
+      rgba(0, 70, 209, 0) 0%,
       rgba(0, 70, 209, 0.15) 100%
     );
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
+
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal);
+
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : setDarkMode}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
         <Navbar />
         <Body>
           <HeroSection />
+          <WorkSummary />
+          <Domains />
           <Wrapper>
             <Skills />
             <Experience />
           </Wrapper>
+
+          {/* Projects Section */}
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
+
+          {/* Certificates Section */}
+          <Certificates />
+
           <Wrapper>
             <Education />
             <Contact />
           </Wrapper>
+
           <Footer />
+
+          {/* Project Details Modal */}
           {openModal.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           )}

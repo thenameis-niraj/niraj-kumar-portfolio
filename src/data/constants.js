@@ -257,3 +257,83 @@ export const TimeLineData = [
   { year: 2024, text: "Joined CDAC as Software Development Intern" },
   { year: 2025, text: "Ongoing: Software Development Intern @ CDAC" },
 ];
+
+// Certificates
+export const certificates = [
+  {
+    id: 2,
+    title: " Programming In C & C++ By (E & ICT Academy, IIT Kanpur)",
+    date: "December 2024",
+    description: `Created a system that ensures access to scholarships by verifying students across different states. Used a Random Forest classification model to analyze scholarship data and determine students’ eligibility based on their information. Designed a user interface with React, Bootstrap, and jQuery for the end of the system. Employed PHP, JavaScript, and Python for the operations of the project.`,
+    image: "/images/certificates/Programming In C++ (IIT Kanpur).jpg", // ✅ Fixed public folder reference
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    category: "certificate",
+    link: "https://drive.google.com/file/d/1po6gAvMIiu0CzYQ0zqScMVfx3zbQHcep/view?usp=drive_link",
+    member: [],
+  },
+  {
+    id: 2,
+    title: "Oracle Certified Professional By (Oracle)",
+    date: "December 2024",
+    description: `Created a system that ensures access to scholarships by verifying students across different states. Used a Random Forest classification model to analyze scholarship data and determine students’ eligibility based on their information. Designed a user interface with React, Bootstrap, and jQuery for the end of the system. Employed PHP, JavaScript, and Python for the operations of the project.`,
+    image: "/images/certificates/Oracal Gen AI.jpg", // ✅ Fixed public folder reference
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    category: "certificate",
+    link: "https://drive.google.com/file/d/1VE5EEhz6cBsIMNC7teDMtVG0yPca1nPI/view?usp=drive_link",
+    member: [],
+  },
+
+  {
+    id: 2,
+    title: " Oracle Certified Foundations Associate By (Oracle)",
+    date: "December 2024",
+    description: `Created a system that ensures access to scholarships by verifying students across different states. Used a Random Forest classification model to analyze scholarship data and determine students’ eligibility based on their information. Designed a user interface with React, Bootstrap, and jQuery for the end of the system. Employed PHP, JavaScript, and Python for the operations of the project.`,
+    image: "/images/certificates/Oracle Fundamental.jpg", // ✅ Fixed public folder reference
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    category: "certificate",
+    link: "https://drive.google.com/file/d/1g_1s8z07QqB__U2whwI0BjhUbR79-KD0/view?usp=drive_link",
+    member: [],
+  },
+
+  {
+    id: 2,
+    title: "Core Java Training By (Internshala)",
+    date: "December 2024",
+    description: `Created a system that ensures access to scholarships by verifying students across different states. Used a Random Forest classification model to analyze scholarship data and determine students’ eligibility based on their information. Designed a user interface with React, Bootstrap, and jQuery for the end of the system. Employed PHP, JavaScript, and Python for the operations of the project.`,
+    image: "/images/certificates/Core Java Training.jpg", // ✅ Fixed public folder reference
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    category: "certificate",
+    link: "https://drive.google.com/file/d/17qiqeGCZwJmlVI2VKnOE-8SobiZt5UPK/view?usp=drive_link",
+    member: [],
+  },
+  {
+    id: 2,
+    title: "Soft Skills By (NPTEL)",
+    date: "December 2024",
+    description: `Created a system that ensures access to scholarships by verifying students across different states. Used a Random Forest classification model to analyze scholarship data and determine students’ eligibility based on their information. Designed a user interface with React, Bootstrap, and jQuery for the end of the system. Employed PHP, JavaScript, and Python for the operations of the project.`,
+    image: "/images/certificates/Soft Skill.jpg", // ✅ Fixed public folder reference
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    category: "certificate",
+    link: "https://drive.google.com/file/d/1pZv7Q0qvI_Rs4EIH6Ril6W2f4YTKk0AA/view?usp=drive_link, https://drive.google.com/file/d/17qiqeGCZwJmlVI2VKnOE-8SobiZt5UPK/view?usp=drive_link",
+    member: [],
+  },
+];
+
+// Domains
+export const domains = [
+  {
+    id: 1,
+    name: "Web Development",
+    description: "Full-stack development with MERN and Django",
+  },
+  {
+    id: 2,
+    name: "Cloud & DevOps",
+    description: "Linux, OpenStack, and automation tools",
+  },
+  {
+    id: 3,
+    name: "Programming",
+    description: "Core Java, Python, C & C++",
+  },
+];
